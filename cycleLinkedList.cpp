@@ -4,7 +4,7 @@ Detect a cycle in a linked list. Note that the head pointer may be 'NULL' if the
 A Node is defined as: 
     struct Node {
         int data;
-        struct Node* next;
+       struct Node* next;
     }
 */
 
