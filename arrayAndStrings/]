@@ -1,0 +1,106 @@
+//Given two strings, write a function to determien if htey are one edit (or zero) edits away
+#include <unordered_map>
+#include <iostream>
+#include <string>
+
+void check(string& first, string& second)
+{
+  if (first.size() == second.size() + 1)
+  {
+    unordered_map<string, int> map_;
+    for (int i = 0; i < first.size(); i++)
+    {
+      if (!(map_.count(input[i])))
+      {
+        map_[input[i]] = 1;
+      }
+      else
+      {
+        map_[input[i]]++;
+      }
+    }
+    for (int i = 0; i < second.size(); i++)
+    {
+      if (map_[second[i]].count)
+      {
+        if (map_[second[i]] <= 0)
+        {
+          cout << "No" << endl;
+          return;
+        }
+        map_[second[i]]--;
+        continue;
+      } 
+      else 
+      {
+        cout << "No" << endl;
+        return;
+      }
+    }
+   
+  }
+  else if (second.size == first.size() + 1)
+  {
+    unordered_map<string, int> map_;
+    for (int i = 0; i < first.size(); i++)
+    {
+      if (!(map_.count(input[i])))
+      {
+        map_[input[i]] = 1;
+      }
+      else
+      {
+        map_[input[i]]++;
+      }
+    }
+    for (int i = 0; i < first.size(); i++)
+    {
+      if (map_[firsti]].count)
+      {
+        if (map_[first[i]] <= 0)
+        {
+          cout << "No" << endl;
+          return;
+        }
+        map_[first[i]]--;
+        continue;
+      }
+      else
+      {
+        cout << "No" << endl;
+        return;
+      }
+    }
+  }
+  else if (first.size() == second.size()
+  {
+    int count = 0;
+    for (int i = 0; i < first.size(); i++)
+    {
+      if (first[i] == second[i])
+      {
+        ;
+      }
+      else
+      {
+        count++;
+      }
+    }
+    if (count > 1)
+    {
+      cout << "reporting live now" << endl;
+      return;
+    }
+  }
+  else
+  {
+    cout << "No" << endl;
+  }
+}
+int main()
+{
+  string first;
+  string second;
+  cin >> first >> second;
+  check(first, second);
+}
