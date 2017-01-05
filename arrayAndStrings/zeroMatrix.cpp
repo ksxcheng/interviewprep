@@ -2,11 +2,19 @@
 
 using namespace std;
 
-void modify(int arr[][5], int m, int n)
+void modify(int arr[][3], int m, int n)
 {
   bool rows[m];
   bool cols[n];
-  
+ 
+  for (int i = 0; i < m; i++)
+  {
+    for (int j = 0; j < n; j++)
+    {
+      cout << arr[i][j] << " ";
+    }
+    cout << endl;
+  } 
   for (int i = 0; i < m; i++)
   {
     for (int j = 0; j < n; j++)
@@ -44,6 +52,7 @@ void modify(int arr[][5], int m, int n)
 }
 int main()
 {
-  int arr[][5] = { {1, 2, 3, 4, 6}, {6, 17, 0, 4, 7}, {2, 7, 9, 3, 8}, {11, 0, 21, 69, 9}, {41, 17, 5, 15, 10} };
-  modify(arr, 5, 5);
+  //int arr[][5] = { {1, 2, 3, 4, 6}, {6, 17, 0, 4, 7}, {2, 7, 9, 3, 8}, {11, 0, 21, 69, 9}, {41, 17, 5, 15, 10} };
+  //int arr[][3] = {{10, 8, 0}};
+  modify(arr, 1, 3);
 }
