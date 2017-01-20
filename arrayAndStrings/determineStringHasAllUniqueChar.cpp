@@ -15,17 +15,10 @@ void determine(string& input)
     }
     else
     {
-      map_[input[i]]++;
-    }
-  }  
-  for (auto x : map_)
-  {
-    if (x.second > 1)
-    {
       cout << "False" << endl;
       return;
     }
-  }
+  }  
   cout << "True" << endl;
 }
 int main()
